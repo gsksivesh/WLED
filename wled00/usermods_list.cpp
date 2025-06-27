@@ -10,6 +10,7 @@
  * \/ \/ \/
  */
 //#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
+#include "../usermods/usermod_v2_speed_reactive/usermod_v2_speed_reactive.h"
 
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
@@ -250,6 +251,7 @@ void registerUsermods()
    * \/ \/ \/
    */
   //UsermodManager::add(new MyExampleUsermod());
+  UsermodManager::add(new SpeedReactiveUsermod());
 
   #ifdef USERMOD_BATTERY
   UsermodManager::add(new UsermodBattery());
